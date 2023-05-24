@@ -1,0 +1,393 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.clearfix:after{
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+/* Header */
+header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(105, 118, 136);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav {
+    width: 12%;
+}
+nav ul{
+    padding: 8%;
+}
+header nav ul li{
+    display: inline;
+    margin-right: 2%;
+
+}
+.Hamburger{
+    width: 30px;
+    display: none;
+}
+.Hamburger img{
+    width: 70%;
+    filter: invert(100%)
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    ;
+}
+nav+img{
+    width: 7%;
+    height: 50px;
+}
+header button{
+    font-size: 1rem;
+    height: 30px;
+    margin-right: 2%;
+    color: rgb(105, 118, 136);
+    border-radius: 10%;
+    border: 0;
+}
+body{
+    font-family: 'Poppins';
+    font-size: 62.5%;
+}
+/* Box1 */
+.box1{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(105, 118, 136);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper1{
+    width: 75%;
+    height: 450px;
+    background-color: rgb(105, 118, 136);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+
+    
+}
+h1{
+    width: 100%;
+    font-size: 4rem;
+    font-weight: 600;
+    color: white;
+    display: inline-block;
+    text-align: center;
+}
+.wrapper1 p{
+    color: white;
+    font-size: 1rem;
+    width: 90%;
+    text-align: center;
+    line-height: 1.5rem;
+}
+.wrapper1 i{
+    font-size: 1.5rem;
+    color: white;
+    width: 10%;
+    text-align: center;
+
+}
+.wrapper1 span{
+    font-size: 1.5rem;
+    width: 40%;
+    color: white;
+    text-align: center;
+}
+.box2{
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper2{
+    width: 50%;
+    height: 250px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.wrapper2 span{
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+}
+.wrapper2 p{
+    font-size: 1rem;
+    color: black;
+    width: 65%;
+    text-align: center;
+}
+
+
+
+
+
+.box3{
+    width: 100%;
+    background-color: rgb(220, 223, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper3{
+    width: 75%;
+    background-color: rgb(220, 223, 226);
+    display: flex;
+}
+.Card{
+    width: 50%;
+    height: 450px;
+    background-color: rgb(220, 223, 226);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+.Card img{
+    width: 75%;
+}
+.Card span{
+    font-size: 1.25rem;
+}
+.Card p{
+    font-size: 1rem;
+    width: 90%;
+    text-align: center;
+    color: rgb(69, 68, 68);
+}
+.Card button{
+    width: 50%;
+    height: 40px;
+    font-size: 1rem;
+    background-color: rgb(220, 223, 226);
+    border: 1px solid grey;
+}
+
+.box4{
+    width: 100%;
+    height: 350px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper4 {
+    width: 50%;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.wrapper4 span{
+    font-size: 2rem;
+    text-align: center;
+}
+.wrapper4 p{
+    font-size: 1rem;
+    text-align: center;
+    width: 70%;
+}
+.wrapper4 button{
+    width: 35%;
+    height: 50px;
+    font-size: 1rem;
+    background-color: white;
+    border: 1px solid grey;
+}
+footer{
+    width: 100%;
+    background-color: rgb(24, 31, 41);
+}
+.footerTop{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(24, 31, 41);
+    display: flex;
+    border-bottom: 3px solid white;
+}
+.Left{
+    width: 50%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.Left img{
+    width: 7%;
+    padding: 1%;
+
+}
+.Left span{
+    font-size: 1rem;
+    color: grey;
+    padding-left: 1%;
+}
+.Left ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding-left: 1%;
+}
+
+.Right {
+    width: 50%;
+    height: 200px;
+    background-color: rgb(24, 31, 41);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    border-bottom: 3px solid white;
+}
+.Right p{
+    width: 30%;
+    padding-right: 1%;
+    color: white;
+    font-size: 1rem;
+}
+
+.Right section{
+    display: flex;
+    flex-direction: column;
+    padding-right: 1%;
+}
+.Right span{
+    font-size: 1rem;
+    color: white;
+    padding-top: 1%;
+}
+footer section+p{
+    font-size: 1rem;
+    color: white;
+    padding: 1%;
+}
+@media screen and (max-width: 900px){
+    header{
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .Hide{
+        display: none;
+    }
+    .Hamburger{
+        display: block;
+        width: 50%; 
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .wrapper2{
+        width: 100%;
+    }
+    .wrapper4{
+        width: 100%;
+    }
+    .wrapper1{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    .wrapper3{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .Card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .wrapper1 span{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 600px){
+    nav+img{
+        display: none
+    }
+    header{
+        display: flex;
+        justify-content: center;
+    }
+   header button{
+        display: none;
+    }
+    .Hamburger{
+        width: 80%;
+    }
+    .footerTop{
+        display: none;
+    }
+}
